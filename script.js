@@ -39,7 +39,7 @@ document.addEventListener("mouseup", () => {
   isMouseDown = false;
 });
 
-// Button for changing size of grid
+// Button for changing size of grid and resetting board
 const button = document.querySelector("button");
 const clearButton = document.querySelector(".clearButton");
 const pText = document.querySelector("p");
