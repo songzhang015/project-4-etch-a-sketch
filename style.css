@@ -1,0 +1,74 @@
+/* CSS File for Etch-a-Sketch Project */
+
+body {
+    height: 80vh;
+    background-color: rgb(236, 236, 236);
+    margin: 0;
+    font-family: Roboto, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Overall container for "header" and "main" */
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* The title, Etch-a-Sketch */
+.header {
+    font-size: 64px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+/* Main contains "options" and "grid" */
+.main {
+    display: flex;
+    max-width: 80vw;
+    max-height: 80vh;
+}
+
+/* Options such as clear grid, change color, grid size, etc */
+.options {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+button {
+    font-size: 32px;
+}
+
+p {
+    color: red;
+    height: 16px;
+    margin: 0;
+}
+
+/* A grid of squares in a container div */
+.grid {
+    width: 1500px;
+    height: auto;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Shape page to have options on left, grid in middle, and invisible right element for alignment */
+.options, .grid, .right {
+    flex: 1;
+}
+
+/* Properties for each square in grid */
+.square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1 / 1;
+}
